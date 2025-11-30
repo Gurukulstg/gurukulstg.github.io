@@ -1,29 +1,330 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gurukul Study Library</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurukul Study Library - Suratgarh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', 'Tiro Devanagari Hindi', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        .animate-pulse-slow {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .7; }
+        }
+    </style>
 </head>
-<body class="bg-gray-100 text-gray-900">
-  <header class="bg-blue-600 text-white py-6 shadow">
-    <h1 class="text-3xl text-center font-bold">Gurukul Study Library – Suratgarh</h1>
-  </header>
+<body class="bg-gray-50 text-gray-800">
 
-  <section class="max-w-3xl mx-auto mt-10 bg-white p-6 rounded-xl shadow">
-    <h2 class="text-2xl font-semibold mb-4">Welcome to Our Landing Page</h2>
-    <p class="text-lg mb-4">Best study environment, high-speed WiFi, comfortable seating & peaceful atmosphere.</p>
-    <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg mt-4 inline-block">Contact Now</a>
-  </section>
+    <!-- Top Notification Bar -->
+    <div class="bg-orange-600 text-white text-center py-2 text-sm font-semibold px-4 animate-pulse-slow">
+        📣 BREAKING — GURUKUL STUDY LIBRARY में फिर से Admission Open! जो पहले आएगा वही सीट पाएगा।
+    </div>
 
-  <section id="contact" class="max-w-3xl mx-auto mt-10 bg-white p-6 rounded-xl shadow">
-    <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
-    <p class="mb-2">📍 Suratgarh, Rajasthan</p>
-    <p class="mb-2">📞 9680390661</p>
-    <p>📧 gurukulstudylibrary@gmail.com</p>
-  </section>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-orange-600"><i class="fas fa-book-reader mr-2"></i>गुरुकुल</span>
+                    <span class="ml-2 text-sm text-gray-600 hidden md:block">Study Library, Suratgarh</span>
+                </div>
+                <div class="flex items-center space-x-2 md:space-x-6">
+                    <a href="#features" class="text-gray-700 hover:text-orange-600 text-sm font-medium hidden sm:block">सुविधाएं</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-orange-600 text-sm font-medium hidden sm:block">फीस</a>
+                    <a href="#location" class="text-gray-700 hover:text-orange-600 text-sm font-medium hidden sm:block">लोकेशन</a>
+                    <a href="#contact" class="bg-orange-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-orange-700 transition">Book Seat</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-  <footer class="text-center py-6 text-sm text-gray-600 mt-10">© 2025 Gurukul Study Library</footer>
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-[90vh] flex items-center justify-center text-center px-4 relative">
+        <div class="max-w-4xl z-10">
+            <span class="inline-block bg-orange-600 text-white px-4 py-1 rounded-full text-sm font-bold mb-4">🌟 Suratgarh's Premium Library</span>
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                जहाँ पढ़ाई मिले <br> <span class="text-orange-500">शांति और सफलता</span> के साथ
+            </h1>
+            <p class="text-xl text-gray-200 mb-8 italic">"घर से बेहतर पढ़ने का माहौल अब आपके शहर में..."</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#contact" class="bg-orange-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-orange-700 transition shadow-lg transform hover:scale-105">
+                    सीट बुक करें
+                </a>
+                <a href="tel:+917015633274" class="bg-white text-gray-900 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition flex items-center justify-center">
+                    <i class="fas fa-phone-alt mr-2 text-orange-600"></i> कॉल करें
+                </a>
+            </div>
+            
+            <div class="mt-12 flex justify-center space-x-8 text-white text-sm md:text-base opacity-90">
+                <div class="flex items-center"><i class="fas fa-check-circle text-orange-500 mr-2"></i> फोकस माहौल</div>
+                <div class="flex items-center"><i class="fas fa-check-circle text-orange-500 mr-2"></i> अनुशासन</div>
+                <div class="flex items-center"><i class="fas fa-check-circle text-orange-500 mr-2"></i> 24x7 सुरक्षा</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">हमारी Premium सुविधाएं</h2>
+                <p class="mt-2 text-gray-600">वो सब कुछ जो आपको एक टॉपर बनने के लिए चाहिए</p>
+                <div class="w-24 h-1 bg-orange-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Feature Cards -->
+                <div class="p-4 border border-gray-100 rounded-xl shadow-sm hover:shadow-orange-200 hover:border-orange-200 transition bg-gray-50 group">
+                    <i class="fas fa-wifi text-3xl text-orange-600 mb-3 group-hover:scale-110 transition-transform block"></i>
+                    <h3 class="font-bold text-gray-800">5G High Speed WiFi</h3>
+                    <p class="text-xs text-gray-500 mt-1">Non-stop ऑनलाइन क्लास</p>
+                </div>
+
+                <div class="p-4 border border-gray-100 rounded-xl shadow-sm hover:shadow-orange-200 hover:border-orange-200 transition bg-gray-50 group">
+                    <i class="fas fa-chair text-3xl text-orange-600 mb-3 group-hover:scale-110 transition-transform block"></i>
+                    <h3 class="font-bold text-gray-800">Comfort Seating</h3>
+                    <p class="text-xs text-gray-500 mt-1">Net Seat / Crown Seat</p>
+                </div>
+
+                <div class="p-4 border border-gray-100 rounded-xl shadow-sm hover:shadow-orange-200 hover:border-orange-200 transition bg-gray-50 group">
+                    <i class="fas fa-snowflake text-3xl text-orange-600 mb-3 group-hover:scale-110 transition-transform block"></i>
+                    <h3 class="font-bold text-gray-800">Fully AC + Heater</h3>
+                    <p class="text-xs text-gray-500 mt-1">सर्दी और गर्मी के लिए उत्तम</p>
+                </div>
+
+                <div class="p-4 border border-gray-100 rounded-xl shadow-sm hover:shadow-orange-200 hover:border-orange-200 transition bg-gray-50 group">
+                    <i class="fas fa-plug text-3xl text-orange-600 mb-3 group-hover:scale-110 transition-transform block"></i>
+                    <h3 class="font-bold text-gray-800">Charging Point</h3>
+                    <p class="text-xs text-gray-500 mt-1">Individual स्विच बोर्ड</p>
+                </div>
+
+                <div class="p-4 border border-gray-100 rounded-xl shadow-sm hover:shadow-orange-200 hover:border-orange-200 transition bg-gray-50 group">
+                    <i class="fas fa-lightbulb text-3xl text-orange-600 mb-3 group-hover:scale-110 transition-transform block"></i>
+                    <h3 class="font-bold text-gray-800">Cabin LED Light</h3>
+                    <p class="text-xs text-gray-500 mt-1">आंखों पर जोर नहीं</p>
+                </div>
+
+                <div class="p-4 border border-gray-100 rounded-xl shadow-sm hover:shadow-orange-200 hover:border-orange-200 transition bg-gray-50 group">
+                    <i class="fas fa-glass-whiskey text-3xl text-orange-600 mb-3 group-hover:scale-110 transition-transform block"></i>
+                    <h3 class="font-bold text-gray-800">RO Water</h3>
+                    <p class="text-xs text-gray-500 mt-1">Hot & Cold सुविधा</p>
+                </div>
+
+                <div class="p-4 border border-gray-100 rounded-xl shadow-sm hover:shadow-orange-200 hover:border-orange-200 transition bg-gray-50 group">
+                    <i class="fas fa-utensils text-3xl text-orange-600 mb-3 group-hover:scale-110 transition-transform block"></i>
+                    <h3 class="font-bold text-gray-800">Lunch Cabin</h3>
+                    <p class="text-xs text-gray-500 mt-1">अलग से भोजन कक्ष</p>
+                </div>
+
+                <div class="p-4 border border-gray-100 rounded-xl shadow-sm hover:shadow-orange-200 hover:border-orange-200 transition bg-gray-50 group">
+                    <i class="fas fa-bed text-3xl text-orange-600 mb-3 group-hover:scale-110 transition-transform block"></i>
+                    <h3 class="font-bold text-gray-800">Boys Hostel</h3>
+                    <p class="text-xs text-gray-500 mt-1">लाइब्रेरी के ऊपर उपलब्ध</p>
+                </div>
+
+                <div class="p-4 border border-gray-100 rounded-xl shadow-sm hover:shadow-orange-200 hover:border-orange-200 transition bg-gray-50 group">
+                    <i class="fas fa-video text-3xl text-orange-600 mb-3 group-hover:scale-110 transition-transform block"></i>
+                    <h3 class="font-bold text-gray-800">24x7 CCTV</h3>
+                    <p class="text-xs text-gray-500 mt-1">पूर्ण सुरक्षा निगरानी</p>
+                </div>
+                 <div class="p-4 border border-gray-100 rounded-xl shadow-sm hover:shadow-orange-200 hover:border-orange-200 transition bg-gray-50 group">
+                    <i class="fas fa-parking text-3xl text-orange-600 mb-3 group-hover:scale-110 transition-transform block"></i>
+                    <h3 class="font-bold text-gray-800">Parking</h3>
+                    <p class="text-xs text-gray-500 mt-1">वाहन पार्किंग सुविधा</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us / Quality -->
+    <section class="py-12 bg-orange-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">⭐ हमारी Quality हमें अलग बनाती है</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-orange-700 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">रोजाना सफाई</h3>
+                    <p>स्वच्छता हमारी प्राथमिकता है, हर रात गहरी सफाई होती है।</p>
+                </div>
+                <div class="bg-orange-700 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">पिन-ड्रॉप साइलेंस</h3>
+                    <p>बिना किसी रुकावट के पूरी एकाग्रता के साथ पढ़ाई करें।</p>
+                </div>
+                <div class="bg-orange-700 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">रिजल्ट ओरिएंटेड</h3>
+                    <p>"जो यहाँ पढ़ेगा — आगे बढ़ेगा"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Shifts -->
+    <section id="pricing" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-gray-900">एडमिशन और फीस</h2>
+                <p class="mt-2 text-gray-600">Admission Open – Limited Seats</p>
+            </div>
+            
+            <div class="bg-white max-w-4xl mx-auto rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row">
+                <div class="md:w-1/2 p-8 bg-orange-50 flex flex-col justify-center items-center text-center">
+                    <h3 class="text-2xl font-bold text-orange-600 mb-4">फ्लेक्सिबल प्लान्स</h3>
+                    <p class="mb-4 text-gray-700">कुछ दिनों / कुछ महीनों / अलग-अलग शिफ्टों में भी सीट उपलब्ध</p>
+                    <ul class="text-left space-y-2 mb-6 text-sm text-gray-600">
+                        <li>✅ Full Day</li>
+                        <li>✅ Half Day</li>
+                        <li>✅ Night Shift</li>
+                        <li>✅ Hourly Basis</li>
+                    </ul>
+                    <div class="font-bold text-gray-800 bg-white px-4 py-2 rounded-lg shadow-sm">
+                        फीस शेड्यूल लाइब्रेरी के बाहर उपलब्ध
+                    </div>
+                </div>
+                <div class="md:w-1/2 p-8 flex flex-col justify-center items-center text-center border-l border-gray-100">
+                     <h3 class="text-2xl font-bold text-gray-800 mb-2">एडमिशन प्रक्रिया</h3>
+                     <p class="text-orange-600 font-bold mb-6">"जो पहले आएगा वही सीट पाएगा"</p>
+                     <p class="text-gray-600 mb-8 text-sm">सीट सीमित हैं। अपनी सीट पक्की करने के लिए आज ही विजिट करें या कॉल करें।</p>
+                     <a href="tel:+917015633274" class="w-full bg-gray-900 text-white py-3 rounded-lg font-bold hover:bg-gray-800 transition">
+                         कॉल करें: 70156 33274
+                     </a>
+                     <a href="tel:+919991343116" class="w-full mt-3 bg-white border border-gray-300 text-gray-900 py-3 rounded-lg font-bold hover:bg-gray-50 transition">
+                         कॉल करें: 99913 43116
+                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Review & Socials -->
+    <section class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <!-- Google Review Card -->
+            <div class="bg-gradient-to-r from-yellow-50 to-orange-50 border border-yellow-200 rounded-2xl p-8 mb-12 text-center shadow-sm relative overflow-hidden">
+                <div class="absolute top-0 right-0 -mt-4 -mr-4 bg-yellow-400 text-white w-16 h-16 rounded-full flex items-center justify-center font-bold text-xl">5★</div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-2">💛 Student Support Campaign</h3>
+                <p class="text-gray-600 mb-6">यदि Gurukul Study Library ने आपकी पढ़ाई में मदद की है, तो कृपया हमें Google Map पर 5 स्टार रेटिंग दें।</p>
+                <a href="https://maps.app.goo.gl/qKjzBECMqiKPnH6c7" target="_blank" class="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition font-semibold shadow-md">
+                    <i class="fab fa-google mr-2"></i> Review on Google Maps
+                </a>
+            </div>
+
+            <!-- Social Media Grid -->
+            <div class="text-center">
+                <h3 class="text-xl font-bold mb-6">Daily Updates & Motivation के लिए जुड़ें</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="https://www.facebook.com/share/17jsbSL6nH/" target="_blank" class="flex items-center bg-blue-800 text-white px-5 py-3 rounded-lg hover:opacity-90 transition">
+                        <i class="fab fa-facebook-f mr-2"></i> Facebook
+                    </a>
+                    <a href="https://www.instagram.com/gurukulstudylibrary?igsh=MW40amt0N3VpZmI0MA==" target="_blank" class="flex items-center bg-pink-600 text-white px-5 py-3 rounded-lg hover:opacity-90 transition">
+                        <i class="fab fa-instagram mr-2"></i> Instagram
+                    </a>
+                    <a href="https://t.me/gurukulstg" target="_blank" class="flex items-center bg-blue-400 text-white px-5 py-3 rounded-lg hover:opacity-90 transition">
+                        <i class="fab fa-telegram-plane mr-2"></i> Telegram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact -->
+    <section id="location" id="contact" class="py-16 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <span class="text-orange-500 font-bold tracking-wider uppercase text-sm">Location</span>
+                    <h2 class="text-3xl font-bold mb-6 mt-2">सूरतगढ़ के सबसे प्रीमियम माहौल में</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-gray-800 p-3 rounded-lg text-orange-500">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-lg">Address</h4>
+                                <p class="text-gray-400">रानी लक्ष्मी बाई चौक, विवेकानंद नगर,<br>सूरतगढ़, राजस्थान</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-gray-800 p-3 rounded-lg text-orange-500">
+                                <i class="fas fa-landmark text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-lg">Nearby Landmarks</h4>
+                                <p class="text-gray-400 text-sm">बस स्टैंड, आशीर्वाद क्लासेज़, ICS कोचिंग सेंटर के नज़दीक।<br>Book Depot, E-Mitra, Tea Stall & Medical सुविधा उपलब्ध।</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-gray-800 p-3 rounded-lg text-orange-500">
+                                <i class="fas fa-phone-alt text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-lg">Contact Us</h4>
+                                <p class="text-white text-lg font-bold">70156 33274</p>
+                                <p class="text-white text-lg font-bold">99913 43116</p>
+                                <p class="text-gray-400 text-sm mt-1">gurukulstg@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Registration Form -->
+                <div class="bg-white text-gray-800 p-6 md:p-8 rounded-2xl shadow-xl">
+                    <h3 class="text-2xl font-bold mb-4">Book Your Seat Today 👇</h3>
+                    <p class="text-sm text-gray-500 mb-6">नीचे दिए गए फॉर्म को भरें, हम आपसे संपर्क करेंगे।</p>
+                    <form class="space-y-4" id="contactForm">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">आपका नाम</label>
+                            <input type="text" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition" placeholder="Rahul Kumar" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">मोबाइल नंबर</label>
+                            <input type="tel" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition" placeholder="9876543210" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">तैयारी (Exam)</label>
+                            <select class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-orange-500 outline-none transition">
+                                <option>REET / 3rd Grade</option>
+                                <option>UPSC / RPSC / SI</option>
+                                <option>SSC / Bank / CET</option>
+                                <option>School / College</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <button type="button" onclick="document.getElementById('successMsg').classList.remove('hidden'); this.classList.add('hidden');" class="w-full bg-orange-600 text-white py-3 rounded-lg font-bold hover:bg-orange-700 transition shadow-lg mt-2">
+                            संदेश भेजें
+                        </button>
+                        <div id="successMsg" class="hidden text-center text-green-600 font-semibold bg-green-50 p-3 rounded border border-green-200">
+                            धन्यवाद! आपकी रिक्वेस्ट भेज दी गई है।
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-gray-500 py-8 text-center border-t border-gray-800">
+        <p class="mb-2">&copy; 2023 Gurukul Study Library, Suratgarh.</p>
+        <p class="text-xs">"एक Recommendation किसी की ज़िंदगी बदल सकती है" 💫</p>
+    </footer>
+
 </body>
 </html>
