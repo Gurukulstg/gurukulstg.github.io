@@ -1,193 +1,153 @@
+
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <!-- ✔ Google Search Console Verification -->
-  <meta name="google-site-verification" content="94VCqJd_7s_0BOcVswEodQmwB37Z9ytI_Je00hLuOYU" />
+<meta charset="UTF-8">
+<title>Gurukul Study Library | Suratgarh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Gurukul Study Library Suratgarh – Premium Silent Study Library with AC, WiFi, RO Water & Secure Seating.">
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+body{margin:0;font-family:Segoe UI,Arial;background:#f4f6f8;color:#222}
+header{background:linear-gradient(120deg,#0f5132,#198754);color:#fff;padding:45px 20px;text-align:center}
+header h1{margin:0;font-size:34px}
+header p{font-size:18px;margin-top:10px}
 
-  <!-- 🔥 Primary SEO -->
-  <title>Gurukul Study Library Suratgarh | Silent Premium Study Space | Best Library in Suratgarh</title>
-  <meta name="description" 
-        content="Gurukul Study Library Suratgarh – Premium Silent Study Space, Crown Seat, Net Seat, High-Speed WiFi, AC/Heater, CCTV, RO Water. WhatsApp पर Direct Seat Booking!">
+.container{max-width:1150px;margin:auto;padding:40px 20px}
 
-  <meta name="keywords" 
-        content="Gurukul Study Library Suratgarh, study library suratgarh, reading library suratgarh, best library suratgarh, silent study space, crown seat, net seat, premium library, library near me">
+.section-title{text-align:center;font-size:28px;margin-bottom:30px;color:#0f5132}
 
-  <meta name="author" content="Gurukul Study Library">
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.box{background:#fff;padding:22px;border-radius:14px;
+box-shadow:0 8px 22px rgba(0,0,0,.08);text-align:center}
+.box h3{color:#198754;margin-bottom:8px}
 
-  <!-- 📍 Local SEO -->
-  <meta name="geo.region" content="IN-RJ" />
-  <meta name="geo.placename" content="Suratgarh" />
-  <meta name="geo.position" content="29.3211;73.8998" />
-  <meta name="ICBM" content="29.3211, 73.8998" />
+.highlight{background:#fff3cd;border-left:6px solid #ffc107;
+padding:22px;margin:40px 0;font-size:18px}
 
-  <!-- 🟦 Open Graph -->
-  <meta property="og:title" content="Gurukul Study Library Suratgarh – Silent Premium Study Space" />
-  <meta property="og:description" content="Suratgarh की सबसे शांत और प्रीमियम Study Library। हाई स्पीड WiFi, AC/Heater, Comfortable Cabin, RO Water, CCTV. WhatsApp से Seat Book करें!" />
-  <meta property="og:image" content="https://i.imgur.com/0f2Z7KX.jpeg" />
-  <meta property="og:url" content="https://gurukulstg.github.io/" />
-  <meta property="og:type" content="website" />
+.cta{background:#0d6efd;color:#fff;padding:30px;
+text-align:center;border-radius:18px;margin-top:40px}
+.cta a{display:inline-block;margin-top:15px;
+padding:14px 30px;background:#25d366;color:#fff;
+font-weight:bold;border-radius:40px;text-decoration:none}
 
-  <!-- 🐦 Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Gurukul Study Library Suratgarh">
-  <meta name="twitter:description" content="Silent & Premium Study Space in Suratgarh. Crown & Net Seats Available. WhatsApp से Booking!">
-  <meta name="twitter:image" content="https://i.imgur.com/0f2Z7KX.jpeg">
+.form-box{background:#fff;border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+padding:30px;max-width:520px;margin:40px auto}
+.form-box h2{text-align:center;color:#0d6efd}
+input,select,button{
+width:100%;padding:12px;margin-top:12px;
+border-radius:8px;border:1px solid #ccc;font-size:15px}
+button{background:#25d366;color:#fff;border:none;
+font-size:17px;font-weight:bold;cursor:pointer}
 
-  <!-- 📱 Favicon -->
-  <link rel="icon" type="image/png" href="https://i.imgur.com/0f2Z7KX.jpeg">
+footer{background:#212529;color:#ddd;padding:30px 20px;
+text-align:center;font-size:14px}
 
-  <!-- 🛠️ Indexing Allowed -->
-  <meta name="robots" content="index, follow">
-  <meta name="googlebot" content="index, follow">
-
-  <!-- 🟡 Schema Markup -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Gurukul Study Library Suratgarh",
-    "image": "https://i.imgur.com/0f2Z7KX.jpeg",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Rani Laxmi Bai Chowk, Vivekanand Nagar",
-      "addressLocality": "Suratgarh",
-      "addressRegion": "Rajasthan",
-      "postalCode": "335804",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "29.3211",
-      "longitude": "73.8998"
-    },
-    "url": "https://gurukulstg.github.io/",
-    "telephone": "+919991343116",
-    "priceRange": "₹700 - ₹900",
-    "description": "Premium Silent Study Library in Suratgarh with WiFi, AC/Heater, Comfortable Seats, RO Water, CCTV, Boys Hostel & Direct WhatsApp Seat Booking.",
-    "openingHours": "Mo-Su 06:00-23:59"
-  }
-  </script>
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <style>
-    body { font-family: 'Poppins', sans-serif; }
-    .hero-bg {
-      background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-      url('https://i.imgur.com/0f2Z7KX.jpeg');
-      background-size: cover;
-      background-position: center;
-    }
-  </style>
+.whatsapp{
+position:fixed;right:20px;bottom:20px;
+background:#25d366;color:white;
+padding:15px 22px;border-radius:50px;
+font-weight:bold;text-decoration:none;
+box-shadow:0 8px 18px rgba(0,0,0,.25)
+}
+</style>
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body>
 
-  <!-- Top Bar -->
-  <div class="bg-orange-600 text-white text-center py-2 text-sm font-semibold">
-      📣 Admission Open – Limited Seats! अभी अपनी सीट बुक करें।
-  </div>
+<header>
+<h1>🌟 GURUKUL STUDY LIBRARY – SURATGARH 🌟</h1>
+<p>जहाँ पढ़ाई मिले शांति, अनुशासन और सफलता के साथ</p>
+</header>
 
-  <!-- Navigation -->
-  <nav class="bg-white shadow-md sticky top-0 z-50">
-      <div class="max-w-7xl mx-auto px-4">
-          <div class="flex justify-between h-16 items-center">
-              <h1 class="text-xl font-bold text-orange-600 flex items-center">
-                  <i class="fa fa-book-reader mr-2"></i> Gurukul Study Library
-              </h1>
+<div class="container">
 
-              <div class="space-x-6 hidden md:flex">
-                  <a href="#features" class="hover:text-orange-600">सुविधाएं</a>
-                  <a href="#pricing" class="hover:text-orange-600">फीस</a>
-                  <a href="#contact" class="bg-orange-600 text-white px-4 py-2 rounded-md hover:bg-orange-700">Book Seat</a>
-              </div>
-          </div>
-      </div>
-  </nav>
+<h2 class="section-title">Premium Facilities</h2>
 
-  <!-- Hero -->
-  <section class="hero-bg h-[90vh] flex items-center justify-center text-center px-4">
-      <div>
-          <h1 class="text-5xl font-bold text-white mb-4">Gurukul Study Library – Suratgarh</h1>
-          <p class="text-xl text-gray-200">साइलेंट, प्रीमियम और हाई-फोकस अध्ययन माहौल</p>
+<div class="features">
+<div class="box"><h3>5G High Speed Wi-Fi</h3><p>Non-stop Online Study</p></div>
+<div class="box"><h3>Comfort Seating</h3><p>Net Seat / Crown Seat</p></div>
+<div class="box"><h3>Fully AC + Heater</h3><p>All Season Comfort</p></div>
+<div class="box"><h3>Charging + LED Light</h3><p>Every Seat Power</p></div>
+<div class="box"><h3>RO Water</h3><p>Hot & Cold Facility</p></div>
+<div class="box"><h3>24×7 CCTV</h3><p>Safe & Secure Study Zone</p></div>
+<div class="box"><h3>Lunch Cabin</h3><p>Separate Area</p></div>
+<div class="box"><h3>Parking Facility</h3><p>Two-Wheeler Parking</p></div>
+</div>
 
-          <a href="https://wa.me/919991343116" class="mt-6 inline-block bg-orange-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-orange-700">
-              📞 WhatsApp पर सीट बुक करें
-          </a>
-      </div>
-  </section>
+<div class="highlight">
+✔ Limited Seats Available<br>
+✔ Few Days / Monthly / Long Term Joining<br>
+✔ Different Shifts Available
+</div>
 
-  <!-- Features -->
-  <section id="features" class="py-16 bg-white">
-      <div class="max-w-7xl mx-auto px-4 text-center">
-          <h2 class="text-3xl font-bold mb-10">हमारी Premium सुविधाएं</h2>
+<div class="form-box">
+<h2>📋 Seat Enquiry</h2>
+<form onsubmit="sendWhatsApp(); return false;">
+<input type="text" id="name" placeholder="Student Name" required>
+<input type="tel" id="mobile" placeholder="Mobile Number" required>
+<select id="seat">
+<option>Net Seat</option>
+<option>Crown Seat</option>
+</select>
+<select id="duration">
+<option>Few Days</option>
+<option>1 Month</option>
+<option>3 Months</option>
+<option>6 Months</option>
+</select>
+<button type="submit">Send on WhatsApp</button>
+</form>
+</div>
 
-          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              <div class="p-4 bg-gray-50 rounded-xl shadow">📶 High-Speed WiFi</div>
-              <div class="p-4 bg-gray-50 rounded-xl shadow">💺 Crown & Net Seat</div>
-              <div class="p-4 bg-gray-50 rounded-xl shadow">🔇 Pin-Drop Silence</div>
-              <div class="p-4 bg-gray-50 rounded-xl shadow">❄️ AC + Heater</div>
-              <div class="p-4 bg-gray-50 rounded-xl shadow">🔌 Charging Point</div>
-              <div class="p-4 bg-gray-50 rounded-xl shadow">💡 LED Cabin Lights</div>
-              <div class="p-4 bg-gray-50 rounded-xl shadow">🚰 RO Water</div>
-              <div class="p-4 bg-gray-50 rounded-xl shadow">📸 CCTV Security</div>
-          </div>
-      </div>
-  </section>
+<p style="text-align:center">
+📍 Near R.K Hospital, Shamshan Ghat Road,<br>
+Vivekanand Nagar, Suratgarh (VIP Area)
+</p>
 
-  <!-- Pricing -->
-  <section id="pricing" class="py-16 bg-gray-100">
-      <div class="max-w-5xl mx-auto px-4 text-center">
-          <h2 class="text-3xl font-bold mb-8">Seat Booking Plans</h2>
+<div class="cta">
+<h2>📲 Book Your Seat Today</h2>
+<p>Call / WhatsApp: <strong>7015633274 | 9991343116</strong></p>
+<a href="https://wa.me/c/919991343116" target="_blank">
+Open WhatsApp Catalog
+</a>
+</div>
 
-          <div class="grid md:grid-cols-2 gap-6">
+</div>
 
-              <!-- Crown Seat -->
-              <div class="bg-white p-8 rounded-xl shadow-lg">
-                  <h3 class="text-2xl font-bold mb-2">Crown Seat</h3>
-                  <p class="text-gray-600 mb-4">Premium Comfort • Silent Cabin</p>
-                  <p class="text-3xl font-bold text-orange-600 mb-4">₹900 / Month</p>
-                  
-                  <a href="https://wa.me/p/9265157820206922/919991343116" 
-                     class="block bg-orange-600 text-white py-3 rounded-lg font-bold hover:bg-orange-700">
-                     🟢 Book Crown Seat
-                  </a>
-              </div>
+<footer>
+<p>
+⭐ <a href="https://maps.app.goo.gl/qKjzBECMqiKPnH6c7" target="_blank">Give Google Review</a><br><br>
+<a href="https://www.facebook.com/share/17jsbSL6nH/" target="_blank">Facebook</a> |
+<a href="https://www.instagram.com/gurukulstudylibrary" target="_blank">Instagram</a> |
+<a href="https://t.me/gurukulstg" target="_blank">Telegram</a>
+</p>
+<p>© Gurukul Study Library – Suratgarh</p>
+</footer>
 
-              <!-- Net Seat -->
-              <div class="bg-white p-8 rounded-xl shadow-lg">
-                  <h3 class="text-2xl font-bold mb-2">Net Seat</h3>
-                  <p class="text-gray-600 mb-4">Affordable + Comfortable Study</p>
-                  <p class="text-3xl font-bold text-orange-600 mb-4">₹700 / Month</p>
-                  
-                  <a href="https://wa.me/p/9132717223432716/919991343116" 
-                     class="block bg-orange-600 text-white py-3 rounded-lg font-bold hover:bg-orange-700">
-                     🟢 Book Net Seat
-                  </a>
-              </div>
+<a class="whatsapp"
+href="https://wa.me/c/919991343116"
+target="_blank">
+💬 WhatsApp
+</a>
 
-          </div>
-      </div>
-  </section>
+<script>
+function sendWhatsApp(){
+let name=document.getElementById("name").value;
+let mobile=document.getElementById("mobile").value;
+let seat=document.getElementById("seat").value;
+let duration=document.getElementById("duration").value;
 
-  <!-- Contact -->
-  <section id="contact" class="py-16 bg-white text-center">
-      <h2 class="text-3xl font-bold mb-4">📞 Contact & Booking</h2>
+let url="https://wa.me/919991343116?text="
++"Name: "+name+"%0A"
++"Mobile: "+mobile+"%0A"
++"Seat: "+seat+"%0A"
++"Duration: "+duration;
 
-      <p class="text-lg mb-4">सीट सीमित हैं – पहले आएं, पहले पाएं!</p>
-
-      <p class="text-xl font-semibold">📍 रानी लक्ष्मी बाई चौक, विवेकानंद नगर, सूरतगढ़</p>
-      <p class="text-xl font-semibold mt-2">📞 WhatsApp: 99913 43116</p>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-black text-white text-center py-6 mt-10">
-      © 2025 Gurukul Study Library Suratgarh
-  </footer>
+window.open(url,'_blank');
+}
+</script>
 
 </body>
 </html>
